@@ -4,10 +4,9 @@ import { StyleSheet } from 'react-native';
 
 export default function PrimaryButton(props) {
     return <BaseButton
-        customStyle={styles.primaryButton}
-        customStyleTitle={styles.primaryButtonTitle}
+        customStyle={[styles.primaryButton, props.customStyle]}
+        customStyleTitle={[styles.primaryButtonTitle, props.customStyleTitle]}
         {...props}
-
     />
 }
 

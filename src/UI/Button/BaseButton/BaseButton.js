@@ -4,8 +4,8 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 export default function BaseButton(props) {
     const {
         icon,
-        customStyle = [],
-        customStyleTitle = [],
+        customStyle = {},
+        customStyleTitle = {},
         title = '',
         onPress = () => { }
     } = props;
@@ -25,5 +25,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderColor: '#CCCCCC',
         borderWidth: 1,
+        marginTop: 5,
+        marginHorizontal: 2.5
     },
 })

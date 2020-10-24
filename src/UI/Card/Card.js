@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import PrimaryButton from '../Button/PrimaryButton';
 import SecondaryButton from '../Button/SecondaryButton';
 import styles from './cardStyle'
+
 export default function CardUI(props) {
     const {
         truckNo, //string

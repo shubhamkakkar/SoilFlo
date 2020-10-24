@@ -4,8 +4,7 @@ import { StyleSheet } from 'react-native';
 
 export default function SecondaryButton(props) {
     return <BaseButton
-        customStyle={styles.secondaryButton}
-        customStyleTitle={styles.secondaryButtonTitle}
+        customStyle={[styles.secondaryButton, props.customStyle]}
         {...props}
     />
 }
